@@ -2,8 +2,10 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
   color: #272829;
+  
 }
 
 a {
@@ -16,13 +18,19 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
+h1 {
+  font-family: "Lato", sans-serif;
+}
+h2{
+  font-family: "Lato", sans-serif;
+}
+h3{
+  font-family: "Lato", sans-serif;
+}
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -276,8 +284,8 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
-  background: url("../img/901853.png") top right no-repeat;
+  height: 30vh;
+  background: url("../img/image_file_here") top right no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -290,7 +298,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.75);
+  background: #F5F7F8;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -300,17 +308,18 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 64px;
+  font-size: 50px;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   line-height: 56px;
-  color: #ffffff;
+  color: #000000;
 }
 
 #hero p {
-  color: #ffffff;
+  color: #000000;
   margin: 15px 0 0 0;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-family: "Lato", sans-serif;
 }
 
 #hero p span {
@@ -325,7 +334,7 @@ h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #ffffff;
+  color: #3a9af5;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
@@ -356,7 +365,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -405,9 +414,10 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
-  font-weight: 700;
-  font-size: 26px;
+  font-weight: 600;
+  font-size: 20px;
   color: #728394;
+  margin-bottom: 20px;
 }
 
 .about .content ul {
@@ -426,8 +436,8 @@ section {
 }
 
 .about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
+  font-size: 0px;
+  margin-right: 1px;
   color: #0563bb;
   line-height: 0;
 }
@@ -474,12 +484,12 @@ section {
 .facts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -494,7 +504,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #45505b;
 }
 
@@ -536,8 +546,8 @@ section {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  
+  font-family: "Lato", sans-serif;
   color: #0563bb;
   margin-bottom: 10px;
 }
@@ -548,6 +558,7 @@ section {
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
+  font-family: "Lato", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -1046,7 +1057,7 @@ section {
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #728394;
 }
 
@@ -1165,31 +1176,31 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
+  background: #F5F7F8;
   color: #45505b;
   font-size: 14px;
-  text-align: center;
+  text-align: left;
   padding: 30px 0;
 }
 
 #footer h3 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   position: relative;
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0 0 15px 0;
 }
 
 #footer p {
-  font-size: 15;
-  font-style: italic;
+  font-size: 16;
+  font-family:  "Source Sans 3", sans-serif;
   padding: 0;
   margin: 0 0 30px 0;
 }
 
 #footer .social-links {
-  margin: 0 0 40px 0;
+  margin: 0 0 1px 0;
 }
 
 #footer .social-links a {
@@ -1208,7 +1219,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #0678e3;
+  background: #689fbd;
   color: #fff;
   text-decoration: none;
 }
