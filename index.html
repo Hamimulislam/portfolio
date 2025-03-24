@@ -16,14 +16,13 @@
   <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -44,11 +43,11 @@
 <body>
   <div class="navibar">
     <ul>
-      <li></span><a href="#about"> About</a></li>
-      <li></span><a href="#skills"> Skills</a></li>
-      <li></span><a href="#resume"> Resume</a></li>
-      <li></span><a href="#portfolio"> Portfolio</a></li>
-      <li></span><a href="#contact"> Contact</a></li>
+      <li></span><a href="#about" class="swipe-heading"> About</a></li>
+      <li></span><a href="#skills" class="swipe-heading"> Skills</a></li>
+      <li></span><a href="#resume" class="swipe-heading"> Resume</a></li>
+      <li></span><a href="#portfolio" class="swipe-heading"> Portfolio</a></li>
+      <li></span><a href="#contact" class="swipe-heading"> Contact</a></li>
     </ul>
   </div>
   
@@ -67,7 +66,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="vessel">
         <div class="box">
             <div class="title">
@@ -75,7 +74,7 @@
                 <h1>Hamimul Islam Chowdhury<span></span></h1>
             </div>
         </div>
-    </div>
+      </div>
       
       <p><span class="typed" data-typed-items="Engineer., Research Enthusiast."></span></p>
       <div class="social-links">
@@ -84,7 +83,6 @@
         <a href="https://www.facebook.com/Hamimul.Islam.Chowdhury" target="_blank" class="facebook"><i class="bx bxl-facebook-circle"></i></a>
       </div>
     </div>
-  </div>
   </section><!-- End Hero -->
   <main id="main">
 
@@ -92,8 +90,8 @@
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
         <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/file.png" class="img-fluid rounded-circle" width="75%" height="auto" alt="Profile Picture">
+          <div class="col-lg-4 d-flex justify-content-center align-items-center">
+            <img src="assets/img/file.png" class="img-fluid rounded-circle" width="70%" height="auto" alt="Profile Picture">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3> Hello! I am a recent Mechanical Engineering graduate from the Chittagong University of Engineering and Technology (CUET).
@@ -135,7 +133,7 @@
         </div>
       </div>
     </section>  <!-- End About Section -->
-  </main>
+  
     
 
            <!-- ======= Skills Section ======= -->
@@ -143,33 +141,30 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Skills</h2>
-          
         </div>
         <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-6">
+          <div class="col-lg-6 content">
             <ul>
               <li>
-                <b>Design, Simulations, and Modeling </b>
-                
+                <h5><b>Design, Simulations, and Modeling</b></h5>
                   <p>
                     SOLIDWORKS, AutoCAD, Adobe illustrator, LAMMPS, ATOMSK, Ovito
                   </p>
-                
               </li>
             </ul>
             <ul>
               <li>
-                <b>Programming Language</b>
+                <h5><b>Programming Language</b></h5>
  
                   <p>
-                    MATLAB, C, Python, HTML
+                    MATLAB, C, Python, HTML, CSS
                   </p>
  
               </li>
             </ul>
              <ul>
               <li>
-                <b>Documentation, Data Visualization and others</b>
+                <h5><b>Documentation, Data Visualization and others</b></h5>
 
                   <p>
                     MS Office Suite, LaTeX, Zotero, OriginPro, Tecplot 360, ImageJ
@@ -180,10 +175,10 @@
           </div>
 
 
-          <div class="col-lg-6">
+          <div class="col-lg-6 content">
             <ul>
               <li>
-                <b>Hands-on Experience</b>
+                <h5><b>Hands-on Experience</b></h5>
                 <p>
                     Nanoparticle synthesis, Electroless Plating, Grinding and Polishing, Sand casting, Welding
                 </p>
@@ -191,9 +186,9 @@
             </ul>
             <ul>
               <li>
-                <b>Testing</b>
+                <h5><b>Testing</b></h5>
                 <p>
-                    Tensile Test, Bending test, Impact test, Microhardness test
+                    Tensile Test, Bending test, Microhardness test
                 </p>
               </li>
             </ul>
@@ -201,7 +196,7 @@
           </div>
         </div>
       </section>  <!-- End Skills Section -->
-        
+    </main>
 
         <!-- ======= Research Interest Section ======= -->
     
@@ -215,31 +210,33 @@
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
-              <h4><li>Material behavior</li></h4>
+              <h2>01</h2>
+              <h4>Material behavior</h4>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box iconbox-blue">
-              <h4><li>Advanced materials</li></h4>
+              <h2>02</h2>
+              <h4>Advanced materials</h4>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box iconbox-blue">
-              <h4><li>Computational Mechanics</li></h4>
+              <h2>03</h2>
+              <h4>Computational Mechanics</h4>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-box iconbox-blue">
-              <h4><li>Additive Manufacturing</li></h4>
+              <h2>04</h2>
+              <h4>Additive Manufacturing</h4>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
 
     </section>  <!-- End Research Interest Section -->
         
@@ -515,281 +512,10 @@
 
     <div class="section-title">
       <h2>Portfolio</h2>
+      <p>SOON WILL BE UPDATED</p>
     </div>
-    
-<div class="row">
-  <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-    <ul id="portfolio-flters">
-      <li data-filter="*" class="filter-active">All</li>
-      <li data-filter=".filter-web">Certifications</li>
-      <li data-filter=".filter-app">Gallery</li>
-      <li data-filter=".filter-card">Designs</li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-    <div class="portfolio-wrap">
-      <img src="assets/img/portfolio/p02.png" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>Certification</h4>
-        
-        <div class="portfolio-links">
-          <a href="assets/img/portfolio/p02.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-    <div class="portfolio-wrap">
-      <img src="assets/img/portfolio/p01.png" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>Certification</h4>
-        <p>Elsevier</p>
-        <div class="portfolio-links">
-          <a href="assets/img/portfolio/p01.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-          <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-    <div class="portfolio-wrap">
-      <img src="assets/img/portfolio/p03.jpg" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>App 2</h4>
-        <div class="portfolio-links">
-          <a href="assets/img/portfolio/p03.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-          <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-    <div class="portfolio-wrap">
-      <img src="assets/img/portfolio/p04.png" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>Card 2</h4>
-        <div class="portfolio-links">
-          <a href="assets/img/portfolio/p04.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-          <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-    <div class="portfolio-wrap">
-      <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>Web 2</h4>
-        <div class="portfolio-links">
-          <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-          <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-    <div class="portfolio-wrap">
-      <img src="assets/img/portfolio/p06.JPG" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>App 3</h4>
-        <div class="portfolio-links">
-          <a href="assets/img/portfolio/p06.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-          <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-    <div class="portfolio-wrap">
-      <img src="assets/img/portfolio/sw01.png" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>SolidWorks</h4>
-        <div class="portfolio-links">
-          <a href="assets/img/portfolio/sw01.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-          <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-    <div class="portfolio-wrap">
-      <img src="assets/img/portfolio/sw02.png" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>SolidWorks</h4>
-        <div class="portfolio-links">
-          <a href="assets/img/portfolio/sw02.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-          <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-    <div class="portfolio-wrap">
-      <img src="assets/img/portfolio/sw03.png" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>SolidWorks</h4>
-        <div class="portfolio-links">
-          <a href="assets/img/portfolio/sw03.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-          <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-    <div class="portfolio-wrap">
-      <img src="assets/img/portfolio/sw05.png" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>SolidWorks</h4>
-        <div class="portfolio-links">
-          <a href="assets/img/portfolio/sw05.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-          <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-    <div class="portfolio-wrap">
-      <img src="assets/img/portfolio/logo.png" class="img-fluid" alt="">
-      <div class="portfolio-info">
-        <h4>SolidWorks</h4>
-        <div class="portfolio-links">
-          <a href="assets/img/portfolio/logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-          <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
 </div>
 </section><!-- End Portfolio Section -->
-
-
-            <!-- ======= Quotes ======= -->
-             
- <!--           <section id="testimonials" class="testimonials section-bg">
-              <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                  <h2>Quotes</h2>
-                </div>
-
-                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                  <div class="swiper-wrapper">
-
-
-                    <div class="swiper-slide">
-                      <div class="testimonial-item">
-                        <p>
-                          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                          Winter is coming.
-                          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                        </p>
-                        <h4>Eddard Stark, Game of Thrones</h4>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="testimonial-item">
-                        <p>
-                          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                          Far west, across the sea, there is a land called Vinland. It's warm. And fertile. A faraway land, where neither slave traders nor the flames of war reach.
-                          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                        </p>
-                        <h4>Thors Snorresson, Vinland Saga</h4>
-                      </div>
-                    </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      This world is cruel. It is also very beautiful.
-                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                    <h4>Mikasa Ackerman, Attack on Titan</h4>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Everybody is a slave to something.
-                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                    <h4>Askeladd, Vinland Saga</h4>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Justice delivered without dispassion is always in danger of not being justice.
-                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                    <h4>Oswaldo Mobray, The Hateful Eight</h4>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                       Always. 
-                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                    <h4>Severus Snape, Harry Potter and the Deathly Hallows</h4>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                       My name is Maximus Decimus Meridius, commander of the Armies of the North, General of the Felix Legions and loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son. Husband to a murdered wife. And I will have my vengeance, in this life or the next.
-                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                    <h4>Maximus Decimus Meridius, Gladiator</h4>
-                  </div>
-                </div>
-                
-                
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      You wear a mask for so long, you forget who you were beneath it.
-                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                    <h4>Alan Moore, V for Vendetta</h4>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            </div>
-          </section><!-- End Quotes Section --> 
 
             <!-- ======= Contact Section ======= -->
             <section id="contact" class="contact">
@@ -809,7 +535,7 @@
                         <p>83/A, High Level Road, Lalkhan Bazar, Chattogram 4000, Bangladesh</p>
                       
                       <div class="email">
-                        <i class='bx bx-mail-send' ></i>
+                        <i class='bx bx-envelope' ></i>
                       </div>
                         <h4>Email</h4>
                         <p>hamimulislam99@gmail.com</p>
@@ -824,22 +550,14 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <hr style="height: 1px; background: linear-gradient(to right, red, blue); border: none;">
+    
     <div class="container">
+      <hr style="height: 1px; background: linear-gradient(to right, red, blue); border: none;">
         <div class="row">
           <div class="col-sm-6">
-            <p>Copyright.&copy; 2025 - Hamimul Islam Chowdhury. All rights reserved<br>
-              Built with 💙 using open-source fonts and icons from <a href="https://fonts.google.com/">Google Fonts</a> and <a href="https://boxicons.com/">Boxicons</a>.</p>
+            <p>Copyright.&copy; 2025 - Hamimul Islam Chowdhury. All rights reserved.</p>
           </div> 
-          <div class="col-sm-6 text-end"><p><q>Everything you want is on the other side of fear.</q><br>&mdash; Jack Canfield</p></div>
-        </div>
-     
-      <div class="social-links">
-        <a href="mailto:hamimulislam99@gmail.com" target="_blank" class="envelope"><i class="bx bxs-envelope"></i></a>
-        <a href="http://www.linkedin.com/in/hamimul-islam-chowdhury" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/Hamimulislam" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.facebook.com/Hamimul.Islam.Chowdhury" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-      </div>
+         
     </div>
   </footer><!-- End Footer -->
 
