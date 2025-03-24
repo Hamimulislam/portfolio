@@ -8,11 +8,16 @@ body {
 }
 
 body {
-	background: linear-gradient(to right, #f3f3f3, #f3f3f3);
+  background: #f5f5f5;
 }
 
 a {
-  color: #0077b6;
+  color: #1fa1e7;
+  background: #1488CC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: none;
 }
 
@@ -22,15 +27,16 @@ a:hover {
 }
 
 
-h1 {
-  font-family: "Lato", sans-serif;
-}
 h2{
-  font-family: "Lato", sans-serif;
+  background: #1A2980;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-h3{
-  font-family: "Lato", sans-serif;
-}
+
+h1,
+h3,
 h4,
 h5,
 h6 {
@@ -47,7 +53,10 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #00b4d8;
+  background: #FF416C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -56,13 +65,13 @@ h6 {
 
 .back-to-top i {
   font-size: 24px;
-  color: #000000;
+  color: #ffffff;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #94dee0;
   color: #fff;
+  transform: translateY(-5px);
 }
 
 .back-to-top.active {
@@ -154,7 +163,7 @@ h6 {
 
 @media (min-width: 992px) {
   #main {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: 75px;
   }
 }
@@ -172,7 +181,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, #fff, #f3f3f3);
+  background: linear-gradient(180deg, #ECE9E6, #f5f5f5);
   color: #000;
   font-family: "Fira Sans", sans-serif;
 
@@ -208,7 +217,7 @@ h6 {
   transition: 0.3s all ease;
 }
 .navibar ul li:hover > a {
-  color: #00b4d8;
+  /*color: #000102;*/
 }
 
 .navibar ul li:hover::before {
@@ -216,90 +225,21 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Glow Section
---------------------------------------------------------------*/
-.rainbow-glow {
-  display:inline-block;
-  padding:1px;
-  position:relative;
-  border-radius:25px;
-  &:before {
-    content:'';
-      display:block;
-      position:absolute;
-      width: 200%;
-      height: 200%;
-      right:-95%;
-      bottom:-50%;
-      top:-50%;
-      background-position:center center;
-    background-image:conic-gradient(from 0 at 50% 50%, transparent 0%, #fff845, #1cc98c, #24cbde, #57a9f7, #bd52f9, #ebb347);
-      animation:rainbowGlowRotate 15s linear infinite;
-    filter:blur(1000px);
-  }
-  .card {
-    padding:1px;
-    position:relative;
-    overflow:hidden;
-    border-radius:25px;
-    &:before {
-      content:'';
-      display:block;
-      position:absolute;
-      width:400%;
-      height: 400%;
-      right:-150%;
-      bottom:50%;
-      top:-150%;
-      background-position:center center;
-    background-image:conic-gradient(from -0 at 50% 50%, transparent 50%, #fff845, #1cc98c, #24cbde, #57a9f7, #bd52f9, #ebb347);
-      animation:rainbowRotate 4s linear infinite;
-    }
-  }
-  .content {
-    padding:7px;
-    background:#0077b6;
-    border-radius:25px;
-    position:relative;
-    z-index:1;
-  }
-}
-
-@keyframes rainbowRotate {
-  0% {
-    transform:rotate(0deg);
-  }
-  100% {
-    transform:rotate(360deg);
-  }
-}
-
-@keyframes rainbowGlowRotate {
-  0% {
-    transform:rotate(0deg) scale(0.3);
-  }
-  50% {
-    transform:rotate(180deg) scale(0.3);
-  }
-  100% {
-    transform:rotate(360deg) scale(0.3);
-  }
-}
-/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: 35vh;
-  background: url("../img/image_file_here") top right no-repeat;
+  background: url("../img/Untitled-1.png") top right no-repeat;
   background-size: cover;
   position: relative;
 }
 
 #hero {
-	background: linear-gradient(180deg, #fdfef5 0%, #f3f3f3 25%);
-}
+  
 
+
+}
 @media (max-width: 992px) {
   #hero {
     background-position: 85%;
@@ -319,21 +259,26 @@ h6 {
 #hero h1 {
   margin-top: 25px;
   font-size: 42px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
+  font-style: italic;
   font-weight: 700;
   line-height: 56px;
-  color: #000000;
+  background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #hero p {
   color: #000000;
-  margin: 15px 0 0 0;
+  margin: 20px 0 0 0;
   font-size: 28px;
   font-family: "Fira Mono", monospace;
 }
 
 #hero p span {
-  color: #FF006E;
+  color: #2e6f95;
   letter-spacing: 1px;
 }
 
@@ -342,6 +287,7 @@ h6 {
 }
 
 #hero .social-links a {
+  cursor: pointer;
   font-size: 24px;
   display: inline-block;
   color: #00a8e8;
@@ -363,12 +309,7 @@ h6 {
 
   #hero h1 {
     font-size: 32px;
-    line-height: 36px;
-  }
-  
-  #hero hx {
-    font-size: 32px;
-    line-height: 36px;
+    line-height: 48px;
   }
 
   #hero p {
@@ -395,11 +336,16 @@ section {
   font-family: "Fira Sans", sans-serif;
   font-size: 32px;
   font-weight: bold;
-
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  display: inline-block;
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-title h2::before {
@@ -432,10 +378,9 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #45505b;
   margin-bottom: 25px;
   text-align: justify;
 }
@@ -454,6 +399,11 @@ section {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+}
+
+.about .content ul a {
+  margin-top: -5px;
+  display: inline-block;
 }
 
 .about .content ul strong {
@@ -502,7 +452,6 @@ section {
 .facts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Lato", sans-serif;
   font-size: 14px;
 }
 
@@ -517,6 +466,15 @@ section {
   margin-bottom: 10px;
   transition: all ease-in-out 0.3s;
   box-shadow: 0px 10px 10px 0px #fff;
+}
+
+.skills .content h5 {
+  font-size: 18px;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .skills .skill-box:hover {
@@ -537,8 +495,6 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Lato", sans-serif;
-  color: #45505b;
 }
 
 .skills .progress .skill .val {
@@ -574,7 +530,6 @@ section {
 }
 
 .research_interest .icon-box h4 a {
-  color: #45505b;
   transition: ease-in-out 0.3s;
 }
 
@@ -586,6 +541,7 @@ section {
 
 .research_interest .icon-box:hover {
   transform: scale(1.05);
+  transform: translateY(-5px);
 }
 
 .research_interest .icon-box:hover {
@@ -614,34 +570,51 @@ section {
   font-weight: 700;
   margin-top: 25px;
   margin-bottom: 30px;
-  color: #45505b;
   text-align: left;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 30px;
-  margin-top: -2px;
-  border-left: 2px solid #0077b6;
   position: relative;
 }
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px; /* Border width */
+  height: 100%;
+  background: linear-gradient(to bottom, #0077b6, #00b4d8, #90e0ef); /* Gradient colors */
+}
+
+.resume .resume-item::after {
+  content: "";
+  position: absolute;
+  left: -7px; /* Adjust position */
+  top: 0px; /* Align properly */
+  width: 15px; /* Circle size */
+  height: 15px;
+  background: linear-gradient(to bottom, #0077b6, #00b4d8, #90e0ef); /* Same gradient */
+  border-radius: 50%;
+}
+
 
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 20px;
   font-weight: 600;
-  
-  font-family: "Lato", sans-serif;
   color: #0077b6;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #F5F5F4;
+  background: #dee3e4;
+  border-radius: 5px;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 400;
-  font-family: "Lato", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -657,17 +630,7 @@ section {
   padding-bottom: 0;
 }
 
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -8.5px;
-  top: 0;
-  background: #fff;
-  border: 8px solid #0077b6;
-}
+
 
 /*--------------------------------------------------------------
 # Test Scores
@@ -688,17 +651,17 @@ section {
 
 .test_score .test_score-box:hover {
   transform: scale(1.05);
+  transform: translateY(-5px);
 }
 
 /*--------------------------------------------------------------
 # publication
 --------------------------------------------------------------*/
 .publication .publication-title {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 500;
   margin-top: 5px;
   margin-bottom: 15px;
-  color: #45505b;
   text-align: left;
 }
 
@@ -749,19 +712,25 @@ section {
   text-transform: uppercase;
   color: #272829;
   border-radius: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover {
   color: #fff;
-  background-color: #0077b6;
+  background: #485563;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
   transform: translateY(-2px);
 }
 
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background-color: #0077b6;
+  background: #485563;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -778,7 +747,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -840,7 +809,6 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
   font-size: 14px;
   padding: 0;
   margin: 0;
@@ -852,7 +820,6 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
   margin: 0 2px;
   font-size: 25px;
   display: inline-block;
@@ -959,14 +926,12 @@ section {
   border-radius: 10px;
   padding: 20px 10px 20px 10px;
   transition: all ease-in-out 0.3s;
-  /*background: #fff;
-  box-shadow: 0px 10px 10px 0px #fff;*/
 }
 
 .services .icon-box .icon {
   margin: 0 auto;
   width: 100px;
-  height: 35px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -995,10 +960,14 @@ section {
   font-weight: 600;
   margin: 10px 0 15px 0;
   font-size: 20px;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .services .icon-box h4 a {
-  color: #45505b;
   transition: ease-in-out 0.3s;
 }
 
@@ -1010,6 +979,7 @@ section {
 
 .services .icon-box:hover {
   transform: scale(1.05);
+  transform: translateY(-5px);
 }
 
 .services .icon-box:hover {
@@ -1030,7 +1000,12 @@ section {
 }
 
 .services .iconbox-orange i {
-  color: #ffa76e;
+  background: #00b09b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -1047,7 +1022,11 @@ section {
 }
 
 .services .iconbox-yellow i {
-  color: #ffbb2c;
+  background: #cb2d3e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .services .iconbox-yellow:hover .icon path {
@@ -1055,7 +1034,11 @@ section {
 }
 
 .services .iconbox-red i {
-  color: #ff5828;
+  background: #cb2d3e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .services .iconbox-red:hover .icon path {
@@ -1063,7 +1046,11 @@ section {
 }
 
 .services .iconbox-teal i {
-  color: #11dbcf;
+  background: #1488CC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 
@@ -1156,6 +1143,7 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
 .contact .info {
   width: 100%;
   /*background: #fff;*/
@@ -1167,7 +1155,6 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #f3f3f3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1181,7 +1168,11 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact .info p {
@@ -1208,8 +1199,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #2A3B55;
-  color: #fff;
+  color: #000000;
   font-size: 14px;
   text-align: justify; 
 }
@@ -1219,19 +1209,16 @@ section {
   font-size: 30px;
   font-weight: 700;
   position: relative;
-  font-family: "Source Sans 3", sans-serif;
   margin: 0 0 15px 0;
 }
 
 #footer p {
   font-size: 15;
-  font-family:  "Source Sans 3", sans-serif;
   padding: 2px 0;
   margin: 0 0 10px 0;
 }
 
 #footer p a {
-  font-family:  "Source Sans 3", sans-serif;
   color: #ffffff;
 }
 
@@ -1243,7 +1230,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #2A3B55;
+  
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1370,7 +1357,7 @@ The hamburger stuff
   transition-property: transform, opacity;
   transition-timing-function: ease;
   transition-duration: 0.4s;
-  background-color: #e9635e;
+  background-color: #000;
   top: 50%;
   transform: translate(51px, -50%);
 }
@@ -1383,7 +1370,7 @@ The hamburger stuff
   transition-property: transform, opacity;
   transition-timing-function: ease;
   transition-duration: 0.4s;
-  background-color: #ca1414;
+  background-color: #000;
   content: "";
   transform: translate(102px, 0);
 }
@@ -1401,7 +1388,7 @@ The hover stuff
 .cta {
   position: relative;
   margin: auto;
-  padding: 15px 22px;
+  padding: 13px 22px;
   transition: all .2s ease; }
   .cta:before {
     content: "";
@@ -1410,7 +1397,10 @@ The hover stuff
     left: 0;
     display: block;
     border-radius: 28px;
-    background: #00b4d8;
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     width: 56px;
     height: 56px;
     transition: all .3s ease; }
@@ -1420,6 +1410,7 @@ The hover stuff
     line-height: 18px;
     font-weight: 600;
     letter-spacing: .25em;
+    color: #45505b;
     text-transform: uppercase;
     vertical-align: middle; }
   .cta svg {
@@ -1429,13 +1420,16 @@ The hover stuff
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: #111;
+    stroke: #45505b;
     stroke-width: 2;
     transform: translateX(-5px);
     transition: all .3s ease; }
   .cta:hover:before {
     width: 100%;
-    background: #00b4d8;
+    background: #36D1DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     ; }
   .cta:hover svg {
     transform: translateX(0); }
@@ -1472,24 +1466,14 @@ The dot transition stuff
   height: 50px;
 }
 
-.vessel .box .title hx {
-  font-family: "DM Serif Text", serif;
-  color: #000000;
-  margin-top: 5px;
-  font-weight: 600;
-  font-size: 42px;
-  line-height: 56px;
-}
-
 .vessel .box .title h1 span {
   width: 0px;
   height: 0px;
   border-radius: 50%;
-  background: #ffb703;
-  animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation-delay: 2s;
-  margin-left: 5px;
-  margin-top: -10px;
+  background: #FF8A5B;
+  animation: popIn 0.5s ease-in-out 2s forwards; 
+ 
+  
   position: absolute;
   bottom: 13px;
   right: -12px;
@@ -1498,35 +1482,18 @@ The dot transition stuff
 /* Pop-in animation */
 @keyframes popIn {
   0% {
-    width: 0px;
-    height: 0px;
-    background: #e9d856;
-    border: 0px solid #ddd;
-    opacity: 0;
-  }
-  50% {
-    width: 10px;
-    height: 10px;
-    background: #e9d856;
     opacity: 1;
-    bottom: 45px;
-  }
-  65% {
-    width: 15px;
-    height: 15px;
-    bottom: 0px;
-  }
-  80% {
-    width: 10px;
-    height: 10px;
-    bottom: 20px;
-  }
-  100% {
     width: 7px;
     height: 7px;
-    background: #FF8A5B;
-    border: 0px solid #222;
-    bottom: 0px;
+    background: #f0a78a;
+  }
+ 
+  100% {
+    opacity: 1;
+    background: #FF4B2B;
+    width: 7px;
+    height: 7px;
+    bottom: -0px;
   }
 }
 
@@ -1534,4 +1501,27 @@ The dot transition stuff
 /* =======================================
 The 
 ======================================= */
+.swipe-heading {
+  color: #333;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
 
+.swipe-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background: #FF8C00;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-in-out;
+}
+
+.swipe-heading:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
