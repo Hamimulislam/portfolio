@@ -1,2 +1,7 @@
 # portfolio
-Personal Website, Hamimul Islam Chowdhury.
+
+Personal Website of Hamimul Islam Chowdhury.
+
+Visit: https://hamimulislam.github.io/portfolio/
+
+Thanks for stopping by.
