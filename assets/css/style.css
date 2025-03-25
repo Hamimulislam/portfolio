@@ -580,7 +580,7 @@ section {
   top: 0;
   width: 2px; /* Border width */
   height: 100%;
-  background: linear-gradient(to bottom, #0077b6, #00b4d8, #90e0ef); /* Gradient colors */
+  background: #0077b6; /* Gradient colors */
 }
 
 .resume .resume-item::after {
@@ -590,7 +590,7 @@ section {
   top: 0px; /* Align properly */
   width: 15px; /* Circle size */
   height: 15px;
-  background: linear-gradient(to bottom, #0077b6, #00b4d8, #90e0ef); /* Same gradient */
+  background: #0077b6; /* Same gradient */
   border-radius: 50%;
 }
 
